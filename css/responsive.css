@@ -1,0 +1,137 @@
+@media (min-width:320px) and (max-width:870px) {
+    nav .top .container .adress {
+        display: none;
+       }
+       nav .top .container .adress {
+        display: none;
+       }
+
+    nav .bottom .container ul{
+        color: white;
+        transition: all 0.3s 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        background-color: rgba(11, 22, 44, 0.9);
+        -webkit-transition: all 0.3s 0.5s ease-in-out;
+        -moz-transition: all 0.3s 0.5s ease-in-out;
+        -ms-transition: all 0.3s 0.5s ease-in-out;
+        -o-transition: all 0.3s 0.5s ease-in-out;
+}
+.navigation{
+   position: sticky;
+    justify-content: center;
+    align-items: center;
+     height: 50px; 
+     order: 3;
+     z-index: 3;
+}
+#check,.bars{
+    display: block;
+   
+}
+#check{
+    opacity: 0;
+    width: 30px;
+    height: 20px;
+     transform: translateY(21px); 
+    -webkit-transform: translateY(21px);
+    -moz-transform: translateY(21px);
+    -ms-transform: translateY(21px);
+    -o-transform: translateY(21px); 
+}
+.bars{
+    z-index: -1;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.bars div{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    transition: transform 0.3s , opacity 0.3s;
+    -webkit-transition: transform 0.3s , opacity 0.3s;
+    -moz-transition: transform 0.3s , opacity 0.3s;
+    -ms-transition: transform 0.3s , opacity 0.3s;
+    -o-transition: transform 0.3s , opacity 0.3s;
+}
+.bars div:nth-child(1){
+    top: 10px;
+}
+.bars div:nth-child(3){
+    top: 20px;
+}
+ #check:checked ~ ul{
+    left: 0;
+}  
+#check:checked ~ .bars div:nth-child(1){
+    top: 12px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+#check:checked  ~ .bars div:nth-child(3){
+    top: 12px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+}
+#check:checked  ~ .bars div:nth-child(2){
+    opacity: 0;
+}
+
+    nav .bottom .container .logo h2{
+       font-size: 16px;
+       z-index: 4;
+    }
+    nav .bottom .container .logo .image_logo{
+        width: 60px;
+        height: 60px;
+    }
+    nav .bottom{
+        padding: 0 5px;
+    }
+    header .content h1{
+        font-size: 24px;
+    }
+    header .content p{
+        font-size: 16px;
+        margin: 10vh 0;
+        line-height: 1.8;
+        text-align: center;
+        margin: 30px 0;
+        max-width: 1180px;
+    }
+
+    .price{
+         font-size: 13px; 
+    }
+
+
+}
+@media (min-width:320px) and (max-width:480px){
+    header{
+        height: 100vh;
+    }
+}
+@media (min-width:870px) and (max-width:1024px){
+    nav .bottom .container button{
+        display: none;
+    }
+}
+@media (min-width:1025px) and (max-width:1230px){
+ 
+} 
